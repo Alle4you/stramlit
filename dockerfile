@@ -11,7 +11,11 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/Alle4you/fitteste.git .
+ARG GITHUB_TOKEN
+RUN git clone https://alle4you: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@github.com/Alle4you/stramlit.git .
+
+
+RUN git clone https://github.com/
 
 
 RUN pip3 install -r requirements.txt
